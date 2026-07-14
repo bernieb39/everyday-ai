@@ -369,6 +369,7 @@ a { color: var(--accent); }
 
 .contact { text-align: center; padding-bottom: 2rem; }
 .contact .section-intro { margin-left: auto; margin-right: auto; }
+.contact-alt { color: var(--muted); font-size: .9rem; margin-top: 1rem; }
 
 .site-footer {
   margin-top: 4rem;

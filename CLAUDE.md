@@ -25,8 +25,8 @@ No framework, no build step, no dependencies.
   footer. Don't present them as live AI.
 - Charts follow the dataviz specs already in place: single hue `#0d9488` (validated),
   bars ≤ 24px with 4px rounded data-ends, 2px sparklines, values in ink not series color.
-- Content placeholders (prices, brand, email) are marked with `EDIT ME` comments in
-  index.html.
+- Everything is deliberately free for now (pre-monetization, portfolio-building phase) —
+  don't reintroduce prices without Bernie's say-so. Remaining `EDIT ME` marker: contact email.
 
 ## Default risk tier
 

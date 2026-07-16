@@ -118,6 +118,8 @@ a { color: var(--accent); }
 }
 .site-nav a:hover { color: var(--accent); }
 
+.site-nav .nav-switch { color: var(--accent); font-weight: 700; }
+
 @media (max-width: 720px) {
   .site-nav { display: none; }
 }
@@ -196,6 +198,12 @@ a { color: var(--accent); }
 .path-card h2 { font-size: 1.3rem; margin: .5rem 0 0; }
 .path-card p { margin: 0; color: var(--ink-2); font-size: .95rem; }
 .path-go { margin-top: .8rem; font-weight: 700; font-size: .92rem; color: var(--accent); }
+
+/* the landing-page chooser is the main event — larger cards, centered note below */
+.paths-hero { max-width: 56rem; }
+.paths-hero .path-card { padding: 2rem 1.9rem 1.8rem; }
+.paths-hero .path-card h2 { font-size: 1.45rem; }
+.paths-note { text-align: center; padding: 0 1.5rem; }
 
 /* ---------- myths ---------- */
 

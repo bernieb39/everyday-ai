@@ -1,6 +1,7 @@
 # Everyday AI — marketing site
 
-Single-page static marketing site for Bernie's freelance AI-builds-for-individuals service.
+Static marketing site for Bernie's freelance AI service, serving two audiences:
+individuals (everyday tools) and small business owners (hands-on AI workflow optimization).
 No framework, no build step, no dependencies.
 
 ## Commands
@@ -10,11 +11,14 @@ No framework, no build step, no dependencies.
 
 ## Layout
 
-- `index.html` — all copy, all demo cards (`data-demo` ids)
-- `css/style.css` — design tokens at the top (`:root`), then components
-- `js/main.js` — modal plumbing, nav, scroll reveal (ES module)
+- `index.html` — landing page: hero + audience chooser (everyday vs. business), myths, contact
+- `everyday.html` — everyday-life audience: all ten demo cards (`data-demo` ids), packages, FAQ
+- `business.html` — small-business audience: sit-down pitch, task cloud (opens demos via
+  `data-demo-link`), business packages, FAQ
+- `css/style.css` — design tokens at the top (`:root`), then components (shared by all pages)
+- `js/main.js` — modal plumbing (skipped on pages without the modal), scroll reveal (ES module)
 - `js/demos.js` — one registry entry per demo; `render(container)` builds the modal body
-- `test/site.test.js` — keeps HTML cards ↔ demo registry in sync, smoke-tests the server
+- `test/site.test.js` — keeps HTML cards ↔ demo registry in sync across pages, smoke-tests the server
 
 ## Conventions
 

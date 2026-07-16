@@ -162,6 +162,41 @@ a { color: var(--accent); }
 
 .trust-line { margin-top: 1.5rem; color: var(--muted); font-size: .9rem; }
 
+/* ---------- audience paths ---------- */
+
+.paths {
+  max-width: 68rem;
+  margin: 1rem auto 0;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.path-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .4rem;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.6rem 1.4rem;
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.path-card:hover, .path-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-big);
+  border-color: var(--accent);
+}
+.path-icon { font-size: 2rem; background: var(--accent-soft); border-radius: var(--radius-sm); padding: .35rem .55rem; }
+.path-card h2 { font-size: 1.3rem; margin: .5rem 0 0; }
+.path-card p { margin: 0; color: var(--ink-2); font-size: .95rem; }
+.path-go { margin-top: .8rem; font-weight: 700; font-size: .92rem; color: var(--accent); }
+
 /* ---------- myths ---------- */
 
 .myths {
@@ -306,6 +341,38 @@ a { color: var(--accent); }
   font-size: .95rem;
   max-width: 40rem;
 }
+
+/* ---------- business section ---------- */
+
+.task-cloud-label {
+  margin: 2.2rem 0 .7rem;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--muted);
+}
+
+.task-cloud { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+.task {
+  font: 600 .9rem var(--font);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: .4em 1em;
+  color: var(--ink-2);
+}
+.task-demo-link {
+  cursor: pointer;
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+  transition: background .15s ease, color .15s ease;
+}
+.task-demo-link:hover, .task-demo-link:focus-visible { background: var(--accent); color: #fff; }
+
+.biz-cta { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 2rem; }
 
 /* ---------- packages ---------- */
 

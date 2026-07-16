@@ -31,6 +31,11 @@ for (const card of document.querySelectorAll('.card[data-demo]')) {
   card.addEventListener('click', () => openDemo(card.dataset.demo));
 }
 
+// inline "try the demo" links outside the card grid (e.g. the business section)
+for (const link of document.querySelectorAll('[data-demo-link]')) {
+  link.addEventListener('click', () => openDemo(link.dataset.demoLink));
+}
+
 document.getElementById('demo-close').addEventListener('click', () => dialog.close());
 
 // click on the backdrop closes the dialog
